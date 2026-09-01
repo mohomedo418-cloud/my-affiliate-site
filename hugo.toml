@@ -1,7 +1,25 @@
 baseURL = 'https://iridescent-truffle-052789.netlify.app/'
 languageCode = 'en-us'
-title = 'My Affiliate Site'
+title = 'My Affiliate Hub'
 theme = 'PaperMod'
 
 [params]
   env = 'production'
+  title = 'My Affiliate Hub'
+  description = 'Curated reviews, tech recommendations, and deals.'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  
+  [params.homeInfoParams]
+    Title = "Welcome to My Reviews & Deals"
+    Content = "I test and review tech, gear, and software to help you make informed decisions."
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mohomedo418-cloud"
