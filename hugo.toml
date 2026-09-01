@@ -1,16 +1,31 @@
-baseURL = 'https://yourdomain.com/'
+baseURL = 'https://your-site.netlify.app/'
 languageCode = 'en-us'
-title = 'Tech & Gaming Reviews'
+title = 'Tech Reviews & Guides'
 theme = 'PaperMod'
 
 [params]
-  description = "Honest hands-on reviews and buying guides."
-  # Mandatory Amazon disclaimer footer on all pages
-  customFooter = "*As an Amazon Associate, I earn from qualifying purchases.*"
+  env = 'production'
+  title = 'Tech Reviews & Guides'
+  description = 'Honest reviews and buying guides for tech, accessories, and gear.'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+
+  [params.homeInfoParams]
+    Title = "Welcome to Tech Reviews 👋"
+    Content = "In-depth hardware reviews, gear comparisons, and buying guides to help you make informed decisions."
 
 [menu]
   [[menu.main]]
-    identifier = "reviews"
     name = "Reviews"
     url = "/posts/"
     weight = 10
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
