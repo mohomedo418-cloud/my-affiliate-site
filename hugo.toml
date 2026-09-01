@@ -1,0 +1,16 @@
+baseURL = 'https://yourdomain.com/'
+languageCode = 'en-us'
+title = 'Tech & Gaming Reviews'
+theme = 'PaperMod'
+
+[params]
+  description = "Honest hands-on reviews and buying guides."
+  # Mandatory Amazon disclaimer footer on all pages
+  customFooter = "*As an Amazon Associate, I earn from qualifying purchases.*"
+
+[menu]
+  [[menu.main]]
+    identifier = "reviews"
+    name = "Reviews"
+    url = "/posts/"
+    weight = 10
